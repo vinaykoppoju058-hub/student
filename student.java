@@ -4,6 +4,12 @@ public class student {
 	int ID;
 	String name;
 	String course;
+	
+	public student(int Id,String name,String course) {
+		this.ID=Id;
+		this.name = name;
+		this.course=course;
+	}
 	public void setID(int iD) {
 		ID = iD;
 	}
@@ -21,9 +27,11 @@ public class student {
 	}
 	public String getCourse() {
 		return course;
+	}
+	@Override
+	public String toString() {
+		return "student ID=" + ID +"\n"+ "name=" + name +"\n"+ "course=" + course + " ";
 	}	
-
-
 }
 
 	
